@@ -98,7 +98,7 @@ export default function Home() {
 
           {/* cards section */}
           <div className="lg:flex gap-10 justify-center">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-teal-600">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-teal-300">
               <Image src={react_logo} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200"> Frontend Development</h3>
               <p className="dark:text-gray-300">
@@ -111,7 +111,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-teal-600">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-yellow-600">
               <Image src={python_logo} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200"> Backend Development </h3>
               <p className="dark:text-gray-300">
@@ -124,7 +124,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:shadow-teal-600">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-pink-700">
               <Image src={cubes} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200"> Modeling and Architecture </h3>
               <p className="dark:text-gray-300">

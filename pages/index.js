@@ -8,10 +8,6 @@ import python_logo from '../public/python_logo.png';
 import cubes from '../public/cubes.png';
 import project_alpha_1 from '../public/project_alpha_1.png';
 import project_alpha_2 from '../public/project_alpha_2.png';
-import web3 from '../public/web3.png'
-import web4 from '../public/web4.png'
-import web5 from '../public/web5.png'
-import web6 from '../public/web6.png'
 import { useState } from "react";
 
 export default function Home() {
@@ -27,22 +23,28 @@ export default function Home() {
       <main className="bg-gray-100 px-10 md:px-20 lg:40 dark:bg-gray-900">
         <section className="">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-gray-400"> developed by Jc</h1>
+            <h1 className="text-xl font-burtons dark:text-gray-400">
+              {" "}
+              developed by Jc
+            </h1>
             <ul className="flex items-center">
               <li className="cursor-pointer text-2xl dark:text-gray-200">
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}/>
+                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} />
               </li>
               <li>
-                <a className="bg-gradient-to-b from-teal-400 to-orange-500
+                <a
+                  className="bg-gradient-to-b from-teal-400 to-orange-500
                     text-white px-4 py-2 rounded-md ml-8"
-                href="https://docs.google.com/document/d/1gYK8EC4NzQej_Tf_KWQGgEM2x9W3Kj8kgednSMSZo4E/edit?usp=sharing">
-                Resume </a>
+                  href="https://docs.google.com/document/d/1gYK8EC4NzQej_Tf_KWQGgEM2x9W3Kj8kgednSMSZo4E/edit?usp=sharing"
+                >
+                  Resume{" "}
+                </a>
               </li>
             </ul>
           </nav>
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
-            Jonathan Ceasar Medina
+              Jonathan Ceasar Medina
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-200">
               Full-Stack Junior Software Engineer and Cyberpsychologist
@@ -50,49 +52,78 @@ export default function Home() {
 
             {/* cards for the "about me" section */}
 
-            <p className="text-md py-5 leading-8 text-gray-800
-              md:text-xl max-w-xl mx-auto dark:text-gray-300">
-                Hi there! Thanks for stopping by my portfolio website.
-                My nickname is Jc and I am an aspiring Software Engineer with the goal of working as a full-stack engineer.
+            <p
+              className="text-md py-5 leading-8 text-gray-800
+              md:text-xl max-w-xl mx-auto dark:text-gray-300"
+            >
+              Hi there! Thanks for stopping by my portfolio website. My nickname
+              is Jc and I am an aspiring Software Engineer with the goal of
+              working as a full-stack engineer.
             </p>
-            <p className="text-md py-5 leading-8 text-gray-800
-              md:text-xl max-w-xl mx-auto dark:text-gray-300">
-              My interests revolve around technology's effects on our individual psychology, hence the Masters degree in Cyberpsychology.
+            <p
+              className="text-md py-5 leading-8 text-gray-800
+              md:text-xl max-w-xl mx-auto dark:text-gray-300"
+            >
+              My interests revolve around technology's effects on our individual
+              psychology, hence the Masters degree in Cyberpsychology.
             </p>
-            <p className="text-md py-5 leading-8 text-gray-800
-              md:text-xl max-w-xl mx-auto dark:text-gray-300">
-              On my free time I enjoy listening to audiobooks or reading books on psychology; but realistically, I spend
-                most of my free time looking at memes, watching Tik Toks on Instagram and Instagram Reels on YouTube.
-                Please scroll below if you would like to learn more.
+            <p
+              className="text-md py-5 leading-8 text-gray-800
+              md:text-xl max-w-xl mx-auto dark:text-gray-300"
+            >
+              On my free time I enjoy coding, listening to psychology
+              audiobooks, and reading novels featured on BookTook and
+              Bookstagram. I also enjoy lifting weights, doing yoga, and playing
+              tennis when the weather is favorable.
             </p>
-
+            <p
+              className="text-md leading-8 text-gray-100
+              md:text-xl max-w-xl mx-auto dark:text-gray-300"
+            >
+              Realistically, I spend most of my free time playing gacha games, looking at memes,
+              watching Tik Tok reels on Instagram, Instagram Reels on YouTube, and YouTube videos on Twitter/X.
+              Please scroll below if you would like to learn more!
+            </p>
           </div>
 
           {/* socials section */}
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-500 dark:text-gray-300">
-            <a href="https://github.com/JonathanCMedina"> <AiFillGithub className="text-black dark:text-white"/> </a>
-            <a href="https://gitlab.com/Jonathan.C.Medina"> <AiFillGitlab className="text-orange-500"/> </a>
-            <a href="https://www.linkedin.com/in/jonathan-ceasar-medina/"> <AiFillLinkedin className="text-blue-600"/> </a>
-            <a href="https://youtu.be/xm3YgoEiEDc"> <AiFillYoutube className="text-red-500"/> </a>
+            <a href="https://github.com/JonathanCMedina">
+              {" "}
+              <AiFillGithub className="text-black dark:text-white" />{" "}
+            </a>
+            <a href="https://gitlab.com/Jonathan.C.Medina">
+              {" "}
+              <AiFillGitlab className="text-orange-500" />{" "}
+            </a>
+            <a href="https://www.linkedin.com/in/jonathan-ceasar-medina/">
+              {" "}
+              <AiFillLinkedin className="text-blue-600" />{" "}
+            </a>
+            <a href="https://youtu.be/xm3YgoEiEDc">
+              {" "}
+              <AiFillYoutube className="text-red-500" />{" "}
+            </a>
           </div>
 
           {/* pic section - hopefully I can get a claymation of me done that'd be so cool */}
-          <div className="relative mx-auto bg-gradient-to-b from-teal-400 to-orange-300
-                rounded-full w-100 h-100 mt-20 md:h-96 md:w-96 overflow-hidden">
-            <Image src={headshot} layout="fill" objectFit="cover"/>
+          <div
+            className="relative mx-auto bg-gradient-to-b from-teal-400 to-orange-300
+                rounded-full w-100 h-100 mt-20 md:h-96 md:w-96 overflow-hidden"
+          >
+            <Image src={headshot} layout="fill" objectFit="cover" />
           </div>
         </section>
 
         {/* Skills section */}
         <section>
           <div>
-            <h3 className="text-3xl py-1 mt-10 dark:text-gray-200">
-              Skills
-              </h3>
+            <h3 className="text-3xl py-1 mt-10 dark:text-gray-200">Skills</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
-              Below are information related to the engineering skills I have developed throughout
-              my journey as a software engineering student. While these cards are not extensive, I
-              am continually learning and open to learning about more technology and tools.
+              Below are information related to the engineering skills I have
+              developed throughout my journey as a software engineering student.
+              While these cards are not extensive, I am continually learning and
+              open to learning about more technology and tools.
             </p>
           </div>
 
@@ -100,11 +131,18 @@ export default function Home() {
           <div className="lg:flex gap-10 justify-center">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-teal-300">
               <Image src={react_logo} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200"> Frontend Development</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
+                {" "}
+                Frontend Development
+              </h3>
               <p className="dark:text-gray-300">
-                Frontend technical skills to deliver a visually pleasing experience
+                Frontend technical skills to deliver a visually pleasing
+                experience
               </p>
-              <h4 className="py-4 text-teal-600"> Programming languages and tools </h4>
+              <h4 className="py-4 text-teal-600">
+                {" "}
+                Programming languages and tools{" "}
+              </h4>
               <div className="text-gray-800 py-1 dark:text-gray-300">
                 <p> HTML 5, CSS, JavaScript </p>
                 <p> React, Next, Tailwind, Bootstrap</p>
@@ -113,27 +151,44 @@ export default function Home() {
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-yellow-600">
               <Image src={python_logo} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200"> Backend Development </h3>
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
+                {" "}
+                Backend Development{" "}
+              </h3>
               <p className="dark:text-gray-300">
-                Backend technical skills for data access and operational functionality
+                Backend technical skills for data access and operational
+                functionality
               </p>
-              <h4 className="py-4 text-teal-600"> Programming languages and tools </h4>
+              <h4 className="py-4 text-teal-600">
+                {" "}
+                Programming languages and tools{" "}
+              </h4>
               <div className="text-gray-800 py-1 dark:text-gray-300">
                 <p> Python and Django </p>
-                <p> Using 3rd-Party Data, RESTful API Patterns  </p>
+                <p> Using 3rd-Party Data, RESTful API Patterns </p>
               </div>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-pink-700">
               <Image src={cubes} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200"> Modeling and Architecture </h3>
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
+                {" "}
+                Modeling and Architecture{" "}
+              </h3>
               <p className="dark:text-gray-300">
-                Project creation practices that allow for modularity, scalability, or ease of use
+                Project creation practices that allow for modularity,
+                scalability, or ease of use
               </p>
-              <h4 className="py-4 text-teal-600"> Project design practices and philosophies </h4>
+              <h4 className="py-4 text-teal-600">
+                {" "}
+                Project design practices and philosophies{" "}
+              </h4>
               <div className="text-gray-800 py-1 dark:text-gray-300">
                 <p> Pub/Sub, Polling, Queues </p>
-                <p> Domain-Driven Design, Microservices, Docker Containerization </p>
+                <p>
+                  {" "}
+                  Domain-Driven Design, Microservices, Docker Containerization{" "}
+                </p>
               </div>
             </div>
           </div>
@@ -142,33 +197,44 @@ export default function Home() {
         {/* start of the projects / portfolio section */}
         <section>
           <div>
-            <h3 className="text-3xl py-1 flex justify-center dark:text-gray-200"> Projects  </h3>
+            <h3 className="text-3xl py-1 flex justify-center dark:text-gray-200">
+              {" "}
+              Projects{" "}
+            </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
               Insert some text about what I do here.
-              <span className="text-teal-600"> Here are some more words that I want colored </span>
-              Here are words that I don't want colored, just in gray again.
-              Then here is ONE word that I want colored in <span className="text-teal-600"> teal! </span>
+              <span className="text-teal-600">
+                {" "}
+                Here are some more words that I want colored{" "}
+              </span>
+              Here are words that I don't want colored, just in gray again. Then
+              here is ONE word that I want colored in{" "}
+              <span className="text-teal-600"> teal! </span>
             </p>
           </div>
 
           {/* pictures section for the portfolio */}
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-          {/* Carousel attempt */}
+            {/* Carousel attempt */}
 
             <div className="basis-1/3 flex-1">
-              <Image src={project_alpha_1}
-              className="rounded-lg object-cover"
-              width={"100%"}
-              height={"100%"}
-              layout="responsive"/>
+              <Image
+                src={project_alpha_1}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
             </div>
 
             <div className="basis-1/3 flex-1">
-              <Image src={project_alpha_2}
-              className="rounded-lg object-cover"
-              width={"100%"}
-              height={"100%"}
-              layout="responsive"/>
+              <Image
+                src={project_alpha_2}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
             </div>
 
             {/* <div className="basis-1/3 flex-1">

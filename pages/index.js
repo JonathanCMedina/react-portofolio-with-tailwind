@@ -224,13 +224,18 @@ export default function Home() {
             CarCar emulates a car dealership website with three distinct parts:
             Inventory, Sales, and Services. This project was created as a pair
             programming project with my colleague Gabe Svetcos. Here are the
-            links to his <a> Github </a> and <a> Gitlab</a>. There are three
-            distinct parts that were established as microservices with
-            interactivity between each via polling. Gabe worked on the Services,
-            I worked on Sales, and we both contributed toward Inventory. This is
-            the first project that we've created using JavaScript and React.
-            Stylings were created using Bootstrap. Please take a look at the
-            Readme file as we crafted it very meticulously! 😁
+            links to his <a href="https://github.com/Gsvetcos" className="text-blue-500"> Github </a> and{" "}
+            <a href="https://gitlab.com/Gsvetcos" className="text-orange-500">
+              {" "}
+              Gitlab
+            </a>
+            . There are three distinct parts that were established as
+            microservices with interactivity between each via polling. Gabe
+            worked on the Services, I worked on Sales, and we both contributed
+            toward Inventory. This is the first project that we've created using
+            JavaScript and React. Stylings were created using Bootstrap. Please
+            take a look at the Readme file as we crafted it very meticulously!
+            😁
           </p>
 
           {/* Project Alpha */}

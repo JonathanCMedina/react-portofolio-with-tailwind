@@ -210,17 +210,48 @@ export default function Home() {
             </p>
           </div>
 
-          <h3 className="text-2xl pt-6 dark:text-purple-300">
+          {/* MealMingle or better */}
+
+          {/* Project Beta */}
+          <h3 className="text-2xl pt-6 text-green-700 dark:text-green-400">
+            {" "}
+            CarCar <a href="https://www.youtube.com/shorts/LWVTsHNQIiU">
+              🚗{" "}
+            </a>{" "}
+          </h3>
+          <p className="pt-2 pb-4 dark:text-gray-300">
+            CarCar is the second full-stack coding project through Hack Reactor.
+            CarCar emulates a car dealership website with three distinct parts:
+            Inventory, Sales, and Services. This project was created as a pair
+            programming project with my colleague Gabe Svetcos. Here are the
+            links to his <a> Github </a> and <a> Gitlab</a>. There are three
+            distinct parts that were established as microservices with
+            interactivity between each via polling. Gabe worked on the Services,
+            I worked on Sales, and we both contributed toward Inventory. This is
+            the first project that we've created using JavaScript and React.
+            Stylings were created using Bootstrap. Please take a look at the
+            Readme file as we crafted it very meticulously! 😁
+          </p>
+
+          {/* Project Alpha */}
+          <h3 className="text-2xl pt-6 text-purple-800 dark:text-purple-300">
             {" "}
             Project and Task Manager Web Application{" "}
+            <a href="https://www.youtube.com/watch?v=ftJI8kc2qvU">📑</a>{" "}
           </h3>
           <p className="pt-2 pb-4 dark:text-gray-300">
             {" "}
             The Project and Task Manager Web Application was my first ever
-            coding project created during my time with Hack Reactor. The Project
-            and Task Manager allows users to signup and log in, create projects,
-            create tasks within those projects, and keep track progress to stay
-            focused and on task.{" "}
+            full-stack coding project created during my time with Hack Reactor.
+            The Project and Task Manager allows users to signup and log in,
+            create projects, create tasks within those projects, and keep track
+            progress to stay focused and on task. This application was created
+            using Python and Django for backend endpoints and authentication.
+            Frontend was created with base HTML. Stylings were created primarily
+            with CSS, the moving background and the stylized icons were created
+            with JavaScript. Project and Task Manager Web Application's backend
+            functionality and basic frontend stylings were created in one day,
+            with stretch goals for further stylings spanned four days.{" "}
           </p>
 
           {/* pictures section for the portfolio */}

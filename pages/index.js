@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-gray-100 px-10 md:px-20 lg:40 dark:bg-gray-900">
+      <main className="bg-gray-100 px-10 pb-10 md:px-20 lg:40 dark:bg-gray-900">
         <section className="">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons dark:text-gray-400">
@@ -33,8 +33,8 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-b from-teal-400 to-orange-500
-                    text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-b bg-teal-600
+                    text-white px-4 py-2 rounded-md ml-8 shadow-md dark:shadow-white"
                   href="https://docs.google.com/document/d/1gYK8EC4NzQej_Tf_KWQGgEM2x9W3Kj8kgednSMSZo4E/edit?usp=sharing"
                 >
                   Resume{" "}
@@ -42,7 +42,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
+          <div className="text-center">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Jonathan Ceasar Medina
             </h2>
@@ -57,8 +57,8 @@ export default function Home() {
               md:text-xl max-w-xl mx-auto dark:text-gray-300"
             >
               Hi there! Thanks for stopping by my portfolio website. My nickname
-              is Jc and I am an aspiring Software Engineer with the goal of
-              working as a full-stack engineer.
+              is Jc and I am a Software Engineer with the goal of working as a
+              full-stack engineer.
             </p>
             <p
               className="text-md py-5 leading-8 text-gray-800
@@ -72,7 +72,7 @@ export default function Home() {
               md:text-xl max-w-xl mx-auto dark:text-gray-300"
             >
               On my free time I enjoy coding, listening to psychology
-              audiobooks, and reading novels featured on BookTook and
+              audiobooks, and reading novels featured on BookTok and
               Bookstagram. I also enjoy lifting weights, doing yoga, and playing
               tennis when the weather is favorable.
             </p>
@@ -80,9 +80,10 @@ export default function Home() {
               className="text-md leading-8 text-gray-100
               md:text-xl max-w-xl mx-auto dark:text-gray-300"
             >
-              Realistically, I spend most of my free time playing gacha games, looking at memes,
-              watching Tik Tok reels on Instagram, Instagram Reels on YouTube, and YouTube videos on Twitter/X.
-              Please scroll below if you would like to learn more!
+              Realistically, I spend most of my free time playing gacha games,
+              looking at memes, watching TikTok reels on Instagram, Instagram
+              Reels on YouTube, and YouTube videos on Twitter/X. Please scroll
+              below if you would like to learn more!
             </p>
           </div>
 
@@ -118,8 +119,10 @@ export default function Home() {
         {/* Skills section */}
         <section>
           <div>
-            <h3 className="text-3xl py-1 mt-10 dark:text-gray-200">Skills</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
+            <h3 className="text-3xl py-1 mt-10 dark:text-gray-200 flex justify-center">
+              Skills
+            </h3>
+            <p className="text-md py-2 leading-8 md:text-xl text-gray-800 dark:text-gray-300">
               Below are information related to the engineering skills I have
               developed throughout my journey as a software engineering student.
               While these cards are not extensive, I am continually learning and
@@ -201,20 +204,27 @@ export default function Home() {
               {" "}
               Projects{" "}
             </h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
-              Insert some text about what I do here.
-              <span className="text-teal-600">
-                {" "}
-                Here are some more words that I want colored{" "}
-              </span>
-              Here are words that I don't want colored, just in gray again. Then
-              here is ONE word that I want colored in{" "}
-              <span className="text-teal-600"> teal! </span>
+
+            <p className="text-lg py-2 leading-8 md:text-xl text-gray-800 dark:text-gray-300">
+              This section showcases some of my projects.
             </p>
           </div>
 
+          <h3 className="text-2xl pt-6 dark:text-purple-300">
+            {" "}
+            Project and Task Manager Web Application{" "}
+          </h3>
+          <p className="pt-2 pb-4 dark:text-gray-300">
+            {" "}
+            The Project and Task Manager Web Application was my first ever
+            coding project created during my time with Hack Reactor. The Project
+            and Task Manager allows users to signup and log in, create projects,
+            create tasks within those projects, and keep track progress to stay
+            focused and on task.{" "}
+          </p>
+
           {/* pictures section for the portfolio */}
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
             {/* Carousel attempt */}
 
             <div className="basis-1/3 flex-1">
@@ -224,6 +234,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
+                alt=""
               />
             </div>
 
@@ -234,40 +245,9 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
+                alt=""
               />
             </div>
-
-            {/* <div className="basis-1/3 flex-1">
-              <Image src={web3}
-              className="rounded-lg object-cover"
-              width={"100%"}
-              height={"100%"}
-              layout="responsive"/>
-            </div>
-
-            <div className="basis-1/3 flex-1">
-              <Image src={web4}
-              className="rounded-lg object-cover"
-              width={"100%"}
-              height={"100%"}
-              layout="responsive"/>
-            </div>
-
-            <div className="basis-1/3 flex-1">
-              <Image src={web5}
-              className="rounded-lg object-cover"
-              width={"100%"}
-              height={"100%"}
-              layout="responsive"/>
-            </div>
-
-            <div className="basis-1/3 flex-1">
-              <Image src={web6}
-              className="rounded-lg object-cover"
-              width={"100%"}
-              height={"100%"}
-              layout="responsive"/>
-            </div> */}
           </div>
         </section>
       </main>

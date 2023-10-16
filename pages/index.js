@@ -133,7 +133,7 @@ export default function Home() {
 
           {/* cards section */}
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-teal-300">
+            <div className="text-center shadow-lg shadow-blue-300 p-10 rounded-xl my-10 dark:shadow-teal-300">
               <Image src={react_logo} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
                 {" "}
@@ -152,7 +152,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-yellow-600">
+            <div className="text-center shadow-lg shadow-blue-600 p-10 rounded-xl my-10 dark:shadow-yellow-600">
               <Image src={python_logo} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
                 {" "}
@@ -168,7 +168,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-pink-700">
+            <div className="text-center shadow-lg shadow-green-400 p-10 rounded-xl my-10 dark:shadow-pink-700">
               <Image src={cubes} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
                 {" "}

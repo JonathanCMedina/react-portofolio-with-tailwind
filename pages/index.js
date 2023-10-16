@@ -35,7 +35,8 @@ export default function Home() {
                 <a
                   className="bg-gradient-to-b bg-teal-600
                     text-white px-4 py-2 rounded-md ml-8 shadow-md dark:shadow-white"
-                  href="https://docs.google.com/document/d/1gYK8EC4NzQej_Tf_KWQGgEM2x9W3Kj8kgednSMSZo4E/edit?usp=sharing"
+                  href="Jonathan_Medina_SoftwareEngineerResume.pdf"
+                  download="Jonathan_Medina_SoftwareEngineer_Resume"
                 >
                   Resume{" "}
                 </a>
@@ -131,15 +132,15 @@ export default function Home() {
           </div>
 
           {/* cards section */}
-          <div className="lg:flex gap-10 justify-center">
+          <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-teal-300">
               <Image src={react_logo} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
                 {" "}
-                Frontend Development
+                Frontend Development and Deployment
               </h3>
               <p className="dark:text-gray-300">
-                Frontend technical skills to deliver a visually pleasing
+                Frontend technical tools to deliver a visually pleasing
                 experience
               </p>
               <h4 className="py-4 text-teal-600">
@@ -147,8 +148,7 @@ export default function Home() {
                 Programming languages and tools{" "}
               </h4>
               <div className="text-gray-800 py-1 dark:text-gray-300">
-                <p> HTML 5, CSS, JavaScript </p>
-                <p> React, Next, Tailwind, Bootstrap</p>
+                <p>HTML, CSS, JavaScript, React.js, TailwindCSS, Bootstrap, Redux, Gitlab, Cloudflare, Vercel, Websockets</p>
               </div>
             </div>
 
@@ -156,19 +156,15 @@ export default function Home() {
               <Image src={python_logo} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
                 {" "}
-                Backend Development{" "}
+                Backend Development and Testing{" "}
               </h3>
-              <p className="dark:text-gray-300">
-                Backend technical skills for data access and operational
-                functionality
-              </p>
+              <p className="dark:text-gray-300"> Backend technical tools for data access and operational functionality </p>
               <h4 className="py-4 text-teal-600">
                 {" "}
                 Programming languages and tools{" "}
               </h4>
               <div className="text-gray-800 py-1 dark:text-gray-300">
-                <p> Python and Django </p>
-                <p> Using 3rd-Party Data, RESTful API Patterns </p>
+                <p>Python, Django, PostgreSQL, Insomnia, RESTful APIs, Swagger, FastAPI, Next.js, SQLite, Using 3rd-Party Data</p>
               </div>
             </div>
 
@@ -176,21 +172,18 @@ export default function Home() {
               <Image src={cubes} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
                 {" "}
-                Modeling and Architecture{" "}
+                System Design Tools, Modeling, and Architecture{" "}
               </h3>
-              <p className="dark:text-gray-300">
-                Project creation practices that allow for modularity,
-                scalability, or ease of use
-              </p>
+              <p className="dark:text-gray-300"> Application creation practices that allow for modularity, scalability, or ease of use </p>
               <h4 className="py-4 text-teal-600">
                 {" "}
                 Project design practices and philosophies{" "}
               </h4>
               <div className="text-gray-800 py-1 dark:text-gray-300">
-                <p> Pub/Sub, Polling, Queues </p>
                 <p>
-                  {" "}
-                  Domain-Driven Design, Microservices, Docker Containerization{" "}
+                  Domain-Driven Design, Docker Containerization, Microservices,
+                  Single Page Applications, (SPA), Polling, Authentication, Publisher/Subscriber, Polling,
+                  Queues
                 </p>
               </div>
             </div>
@@ -211,6 +204,16 @@ export default function Home() {
           </div>
 
           {/* MealMingle or better */}
+          <h3 className="text-2xl pt-6 text-purple-800 dark:text-purple-300">
+            {" "}
+            MealMingle{" "}
+            <a href="https://youtu.be/eyaMGdYIdUQ?si=orG83I7ZdmNi-3I2">
+              🍽️🥂🎉
+            </a>{" "}
+          </h3>
+          <p className="pt-2 pb-4 dark:text-gray-300">
+            Words
+          </p>
 
           {/* Project Beta */}
           <h3 className="text-2xl pt-6 text-green-700 dark:text-green-400">
@@ -224,7 +227,12 @@ export default function Home() {
             CarCar emulates a car dealership website with three distinct parts:
             Inventory, Sales, and Services. This project was created as a pair
             programming project with my colleague Gabe Svetcos. Here are the
-            links to his <a href="https://github.com/Gsvetcos" className="text-blue-500"> Github </a> and{" "}
+            links to his{" "}
+            <a href="https://github.com/Gsvetcos" className="text-blue-500">
+              {" "}
+              Github{" "}
+            </a>{" "}
+            and{" "}
             <a href="https://gitlab.com/Gsvetcos" className="text-orange-500">
               {" "}
               Gitlab

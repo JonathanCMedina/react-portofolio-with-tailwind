@@ -55,7 +55,7 @@ const ContactForm = () => {
                     type="text"
                     placeholder="Your name"
                     name="name"
-                    className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
+                    className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-pink-500 dark:placeholder-green-500 bg-white border-0 rounded shadow outline-none dark:shadow-blue-300 dark:bg-gray-900"
                     required
                 />
             </div>
@@ -64,7 +64,7 @@ const ContactForm = () => {
                     type="email"
                     placeholder="Your email address"
                     name="email"
-                    className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
+                    className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-pink-500 dark:placeholder-green-500 bg-white border-0 rounded shadow outline-none dark:shadow-yellow-600 dark:bg-gray-900"
                     required
                 />
             </div>
@@ -72,13 +72,13 @@ const ContactForm = () => {
                 <textarea
                     placeholder="Your message"
                     name="message"
-                    className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
+                    className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-pink-500 dark:placeholder-green-500 bg-white border-0 rounded shadow outline-none dark:shadow-pink-700 dark:bg-gray-900"
                     required
                 />
             </div>
             <div className="pt-0 mb-3">
                 <button
-                    className="active:bg-blue-600 hover:shadow-lg focus:outline-none px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear bg-blue-500 rounded shadow outline-none"
+                    className="active:bg-green-700 focus:outline-none px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear bg-teal-600 rounded-md shadow-md dark:shadow-white"
                     type="submit"
                 >
                     Send a message

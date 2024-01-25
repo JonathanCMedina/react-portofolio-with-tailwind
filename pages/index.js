@@ -8,10 +8,22 @@ import python_logo from '../public/python_logo.png';
 import cubes from '../public/cubes.png';
 import project_alpha_1 from '../public/project_alpha_1.png';
 import project_alpha_2 from '../public/project_alpha_2.png';
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import ContactForm from "./contactForm";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+    useEffect(() => {
+      if (document) {
+        const stylesheet = document.createElement("link");
+        stylesheet.rel = "stylesheet";
+        stylesheet.href =
+          "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css";
+
+        document.head.appendChild(stylesheet);
+      }
+    }, []);
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -32,14 +44,13 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} />
               </li>
               <li>
-                {/* <a
-                  className="bg-gradient-to-b bg-teal-600
+                <a
+                  className="bg-teal-600
                     text-white px-4 py-2 rounded-md ml-8 shadow-md dark:shadow-white"
                   href="Jonathan_Medina_SoftwareEngineerResume.pdf"
                   download="Jonathan_Medina_SoftwareEngineer_Resume"
-                > */}
-                  Resume{" "}
-                {/* </a> */}
+                >
+                Resume </a>
               </li>
             </ul>
           </nav>
@@ -326,6 +337,14 @@ export default function Home() {
                 alt=""
               />
             </div>
+          </div>
+        </section>
+        {/* Contact Form Section  */}
+        <section>
+          <div>
+            <h3 className="text-2xl pt-10 pb-5 flex justify-center text-teal-600">
+            Any questions or inquiries? Please contact me below! </h3>
+            <ContactForm />
           </div>
         </section>
       </main>

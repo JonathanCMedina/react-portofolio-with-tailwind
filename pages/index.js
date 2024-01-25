@@ -32,14 +32,14 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} />
               </li>
               <li>
-                <a
+                {/* <a
                   className="bg-gradient-to-b bg-teal-600
                     text-white px-4 py-2 rounded-md ml-8 shadow-md dark:shadow-white"
                   href="Jonathan_Medina_SoftwareEngineerResume.pdf"
                   download="Jonathan_Medina_SoftwareEngineer_Resume"
-                >
+                > */}
                   Resume{" "}
-                </a>
+                {/* </a> */}
               </li>
             </ul>
           </nav>

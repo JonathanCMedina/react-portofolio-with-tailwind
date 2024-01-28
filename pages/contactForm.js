@@ -55,7 +55,7 @@ const ContactForm = () => {
                     type="text"
                     placeholder="Your name"
                     name="name"
-                    className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-pink-500 dark:placeholder-green-500 bg-white border-0 rounded shadow outline-none dark:shadow-blue-300 dark:bg-gray-900"
+                    className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-pink-500 dark:placeholder-teal-600 bg-white border-0 rounded shadow outline-none dark:shadow-blue-300 dark:bg-gray-900"
                     required
                 />
             </div>
@@ -64,7 +64,7 @@ const ContactForm = () => {
                     type="email"
                     placeholder="Your email address"
                     name="email"
-                    className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-pink-500 dark:placeholder-green-500 bg-white border-0 rounded shadow outline-none dark:shadow-yellow-600 dark:bg-gray-900"
+                    className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-pink-500 dark:placeholder-teal-600 bg-white border-0 rounded shadow outline-none dark:shadow-yellow-600 dark:bg-gray-900"
                     required
                 />
             </div>
@@ -72,7 +72,7 @@ const ContactForm = () => {
                 <textarea
                     placeholder="Your message"
                     name="message"
-                    className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-pink-500 dark:placeholder-green-500 bg-white border-0 rounded shadow outline-none dark:shadow-pink-700 dark:bg-gray-900"
+                    className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-pink-500 dark:placeholder-teal-600 bg-white border-0 rounded shadow outline-none dark:shadow-pink-700 dark:bg-gray-900"
                     required
                 />
             </div>

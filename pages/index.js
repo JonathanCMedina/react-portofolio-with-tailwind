@@ -13,16 +13,6 @@ import ContactForm from "./contactForm";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-    useEffect(() => {
-      if (document) {
-        const stylesheet = document.createElement("link");
-        stylesheet.rel = "stylesheet";
-        stylesheet.href =
-          "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css";
-
-        document.head.appendChild(stylesheet);
-      }
-    }, []);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -50,7 +40,8 @@ export default function Home() {
                   href="Jonathan_Medina_SoftwareEngineerResume.pdf"
                   download="Jonathan_Medina_SoftwareEngineer_Resume"
                 >
-                Resume </a>
+                  Resume{" "}
+                </a>
               </li>
             </ul>
           </nav>
@@ -86,8 +77,8 @@ export default function Home() {
             >
               On my free time I enjoy coding, listening to psychology
               audiobooks, and reading novels featured on BookTok and
-              Bookstagram. I also enjoy lifting weights, doing yoga, and playing
-              tennis when the weather is favorable.
+              Bookstagram. I also enjoy lifting weights, doing yoga, playing
+              videogames, and playing tennis when the weather is favorable.
             </p>
             <p
               className="text-md leading-8 text-gray-100
@@ -249,22 +240,66 @@ export default function Home() {
             </p>
           </div>
 
-          {/* MealMingle or better */}
-          <h3 className="text-2xl pt-6 text-purple-800 dark:text-purple-300">
+          {/* Munch Manager */}
+          <h3 className="text-2xl pt-6 text-pink-700 dark:text-pink-400">
             {" "}
-            MealMingle{" "}
-            <a href="https://youtu.be/eyaMGdYIdUQ?si=orG83I7ZdmNi-3I2">
-              🍽️🥂🎉
-            </a>{" "}
+            <a
+              href="https://github.com/JonathanCMedina/MunchManager"
+              className="underline"
+            >
+              Munch Manager
+            </a>
+            <a href="https://www.youtube.com/shorts/5wd9RWDxK9A"> 🍽️</a>{" "}
           </h3>
-          <p className="pt-2 pb-4 dark:text-gray-300">Words</p>
+          <p className="pt-2 pb-4 dark:text-gray-300">
+            Munch Manager is a macronutrient tracking application. Currently it
+            is a work in progress, but works to help me practice React Native so
+            I can create a web app version and try my hand at mobile
+            development. This app aims to work by keeping track of
+            protein/carbohydrate/fat intake, weigh-ins, creatine. A bit of a
+            stretch goal is to use the camera to scan barcodes to get macro
+            information.
+          </p>
+
+          {/* MealMingle or better */}
+          <h3 className="text-2xl pt-6 text-orange-700 dark:text-orange-300">
+            <a
+              href="https://github.com/JonathanCMedina/MealMingle"
+              className="underline"
+            >
+              {" "}
+              MealMingle
+            </a>
+            <a href="https://youtu.be/eyaMGdYIdUQ?si=orG83I7ZdmNi-3I2">
+              🥂
+            </a>
+          </h3>
+          <p className="pt-2 pb-4 dark:text-gray-300">
+            MealMingle is the final group project with Hack Reactor. MealMingle
+            was created to be a premiere solution to scheduling and organizing
+            dinner parties, as well as other events. Thinking of throwing a
+            surprise birthday party for a friend at your home? Share the details
+            to friends and family so they can be added to the guest list. Or
+            what about a movie night in with a few people? MealMingle uses
+            RESTful API patterns, backend created with Python and Pydantic
+            models, backend authentication used from JWTDown FastAPI Auth
+            Library, backend deployed through FastAPI docs, Postgresql as the
+            database and managed through Caprover and Docker for
+            containerization. Frontend is created with JSX and TailwindCSS,
+            frontend authentication were imported from the Galvanize Auth
+            Library, and the frontend website is deployed through Gitlab.
+          </p>
 
           {/* Project Beta */}
           <h3 className="text-2xl pt-6 text-green-700 dark:text-green-400">
-            {" "}
-            CarCar <a href="https://www.youtube.com/shorts/LWVTsHNQIiU">
-              🚗{" "}
-            </a>{" "}
+            <a
+              href="https://github.com/JonathanCMedina/CarCar"
+              className="underline"
+            >
+              {" "}
+              CarCar
+            </a>
+            <a href="https://www.youtube.com/shorts/LWVTsHNQIiU"> 🚗 </a>{" "}
           </h3>
           <p className="pt-2 pb-4 dark:text-gray-300">
             CarCar is the second full-stack coding project through Hack Reactor.
@@ -292,9 +327,13 @@ export default function Home() {
 
           {/* Project Alpha */}
           <h3 className="text-2xl pt-6 text-purple-800 dark:text-purple-300">
-            {" "}
-            Project and Task Manager Web Application{" "}
-            <a href="https://www.youtube.com/watch?v=ftJI8kc2qvU">📑</a>{" "}
+            <a
+              href="https://github.com/JonathanCMedina/Project-and-Task-Manager"
+              className="underline"
+            >
+              Project and Task Manager Web Application
+            </a>
+            <a href="https://www.youtube.com/watch?v=ftJI8kc2qvU"> 📑</a>{" "}
           </h3>
           <p className="pt-2 pb-4 dark:text-gray-300">
             {" "}
@@ -342,8 +381,9 @@ export default function Home() {
         {/* Contact Form Section  */}
         <section>
           <div>
-            <h3 className="text-2xl pt-10 pb-5 flex justify-center text-teal-600">
-            Any questions or inquiries? Please contact me below! </h3>
+            <h3 className="text-2xl pt-10 pb-5 flex justify-center dark:text-gray-200">
+              Any questions or inquiries? Please contact me below!{" "}
+            </h3>
             <ContactForm />
           </div>
         </section>

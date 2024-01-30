@@ -11,6 +11,7 @@ import project_alpha_2 from '../public/project_alpha_2.png';
 import { useState, useEffect } from "react";
 import ContactForm from "./contactForm";
 import Carousel from "./Carousel"
+import Carousel2 from "./Carousel2";
 
 const slides = [
   project_alpha_1,
@@ -358,16 +359,8 @@ export default function Home() {
           </p>
 
           {/* pictures section for the portfolio */}
-          <div className="max-w-lg">
-            <Carousel autoSlide={true}>
-              {slides.map((s) => (
-                // eslint-disable-next-line react/jsx-key
-                <Image src={s} alt=""/>
-              ))}
-            </Carousel>
-          </div>
-          {/* <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
-            Carousel attempt
+
+          <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <Image
                 src={project_alpha_1}
@@ -389,7 +382,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-          </div> */}
+          </div>
         </section>
         {/* Contact Form Section  */}
         <section>

@@ -147,7 +147,7 @@ export default function Home() {
           </div>
 
           {/* cards section */}
-          <div className="lg:flex gap-10 items-stretch" >
+          <div className="lg:flex gap-10" >
             <div className="text-center w-full shadow-lg shadow-blue-300 p-10 rounded-xl my-10 dark:shadow-teal-300">
               <Image
                 src={react_logo}

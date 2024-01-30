@@ -53,10 +53,10 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+            <h2 className="text-5xl pt-2 pb-4 text-teal-600 font-medium md:text-6xl">
               Jonathan Ceasar Medina
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-200">
+            <h3 className="text-2xl py-4 md:text-3xl dark:text-gray-200">
               Full-Stack Junior Software Engineer and Cyberpsychologist
             </h3>
 
@@ -84,11 +84,11 @@ export default function Home() {
             >
               On my free time I enjoy coding, listening to psychology
               audiobooks, and reading novels featured on BookTok and
-              Bookstagram. I also enjoy lifting weights, doing yoga, playing
+              Bookstagram. I also love lifting weights, doing yoga, playing
               videogames, and playing tennis when the weather is favorable.
             </p>
             <p
-              className="text-md leading-8 text-gray-100
+              className="text-md py-5 leading-8 text-gray-100
               md:text-xl max-w-xl mx-auto dark:text-gray-300"
             >
               Realistically, I spend most of my free time playing gacha games,
@@ -120,12 +120,12 @@ export default function Home() {
 
           {/* pic section - hopefully I can get a claymation of me done that'd be so cool */}
           <div
-            className="relative mx-auto bg-gradient-to-b from-teal-400 to-orange-300
-                rounded-full w-100 h-100 mt-20 md:h-96 md:w-96 overflow-hidden"
+            className="relative mx-auto
+                rounded-full w-95 h-95 mt-10 md:h-96 md:w-96 overflow-hidden"
           >
             <Image
               src={headshot}
-              layout="fill"
+              layout="responsive"
               objectFit="cover"
               alt="headshot picture of Jonathan Medina"
             />
@@ -147,8 +147,8 @@ export default function Home() {
           </div>
 
           {/* cards section */}
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg shadow-blue-300 p-10 rounded-xl my-10 dark:shadow-teal-300">
+          <div className="lg:flex gap-10 items-stretch" >
+            <div className="text-center w-full shadow-lg shadow-blue-300 p-10 rounded-xl my-10 dark:shadow-teal-300">
               <Image
                 src={react_logo}
                 width={100}
@@ -175,7 +175,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-center shadow-lg shadow-blue-600 p-10 rounded-xl my-10 dark:shadow-yellow-600">
+            <div className="text-center w-full shadow-lg shadow-blue-600 p-10 rounded-xl my-10 dark:shadow-yellow-600">
               <Image
                 src={python_logo}
                 width={100}
@@ -203,7 +203,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-center shadow-lg shadow-green-400 p-10 rounded-xl my-10 dark:shadow-pink-700">
+            <div className="text-center w-full shadow-lg shadow-green-400 p-10 rounded-xl my-10 dark:shadow-pink-700">
               <Image
                 src={cubes}
                 width={100}

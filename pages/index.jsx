@@ -10,13 +10,8 @@ import project_alpha_1 from '../public/project_alpha_1.png';
 import project_alpha_2 from '../public/project_alpha_2.png';
 import { useState, useEffect } from "react";
 import ContactForm from "./contactForm";
-import Carousel from "./Carousel"
-import Carousel2 from "./Carousel2";
 
-const slides = [
-  project_alpha_1,
-  project_alpha_2,
-]
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -57,7 +52,7 @@ export default function Home() {
               Jonathan Ceasar Medina
             </h2>
             <h3 className="text-2xl py-4 md:text-3xl dark:text-gray-200">
-              Full-Stack Junior Software Engineer and Cyberpsychologist
+              Full-Stack Developer, Web Designer, and Cyberpsychologist
             </h3>
 
             {/* cards for the "about me" section */}
@@ -243,7 +238,7 @@ export default function Home() {
             </h3>
 
             <p className="text-lg py-2 leading-8 md:text-xl text-gray-800 dark:text-gray-300">
-              This section showcases some of my projects.
+              This section showcases some of my projects. Links for the repos are embedded in the titles.
             </p>
           </div>
 
@@ -331,6 +326,33 @@ export default function Home() {
             Please take a look at the Readme file as we crafted it very
             meticulously! 😁
           </p>
+            {/* pictures section for CarCar */}
+
+          <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={project_alpha_1}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt=""
+              />
+            </div>
+
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={project_alpha_2}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt=""
+              />
+            </div>
+          </div>
+
+
 
           {/* Project Alpha */}
           <h3 className="text-2xl pt-6 text-purple-800 dark:text-purple-300">
@@ -358,7 +380,7 @@ export default function Home() {
             days.{" "}
           </p>
 
-          {/* pictures section for the portfolio */}
+          {/* pictures section for the Project Alpha */}
 
           <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
@@ -388,9 +410,12 @@ export default function Home() {
         <section>
           <div>
             <h3 className="text-2xl pt-10 pb-5 flex justify-center dark:text-gray-200">
-              Any questions or inquiries? Please contact me below!{" "}
+              Any questions or inquiries? Please contact me at my email below!{" "}
             </h3>
-            <ContactForm />
+            {/* <ContactForm /> */}
+            <h2 className="text-xl pb-5 underline flex justify-center text-blue-500 dark:text-teal-300">
+            <a href="mailto:jonathan.c.medina.x@gmail.com"> Jonathan.C.Medina.x@gmail.com </a>
+            </h2>
           </div>
         </section>
       </main>

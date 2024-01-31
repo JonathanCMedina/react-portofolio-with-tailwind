@@ -13,6 +13,7 @@ import Create_Sale2 from '../public/CarCar/CarCar_Create_Sale2.png'
 import List_Sales from '../public/CarCar/CarCar_List_Sales.png'
 import NavBar from '../public/CarCar/CarCar_nav.png'
 import ServiceAppts from '../public/CarCar/CarCar_Service_Appts.png'
+import CarCar_DesignDiagram from '../public/CarCar/CarCar_DesignDiagram.png'
 
 
 
@@ -331,6 +332,7 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
+
             <div className="basis-1/3 flex-1">
               <Image
                 src={Create_Sale2}
@@ -338,7 +340,9 @@ export default function Home() {
                 width={"100"}
                 height={"50"}
                 layout="responsive"
-                alt=""
+                alt="Screenshot of CarCar's Create a Sale form which includes
+                dropdowns for the automobile, the salesperson's information,
+                the customer's information, the price of the vehicle, and a create button"
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -348,7 +352,10 @@ export default function Home() {
                 width={"100"}
                 height={"75"}
                 layout="responsive"
-                alt=""
+                alt="Screenshot of CarCar's navigation bar which includes manufacturers,
+                models, automobiles, technicians, service appointments, salespeople, customers,
+                and sales. All of these also have their 'add a...' counterpart. There is
+                also a button for viewing Service History. "
               />
             </div>
 
@@ -359,7 +366,11 @@ export default function Home() {
                 width={"125"}
                 height={"50"}
                 layout="responsive"
-                alt=""
+                alt="Screenshot of CarCar's List of Sales,
+                showcasing column titles of salesperson first name,
+                salesperson last name, employee number, purchaser first name,
+                purchaser last name, VIN, and price of sale.
+                Above the table of lists is a search bar"
               />
             </div>
 
@@ -370,19 +381,29 @@ export default function Home() {
                 width={"100"}
                 height={"40"}
                 layout="responsive"
-                alt=""
+                alt="Screenshot of CarCar's service appointments list
+                with one entry including VIN, VIP status, customer name,
+                date, time of appointment, technician, reason for appointment,
+                and status section with buttons of Finish and Cancel to update the entry"
               />
             </div>
 
-
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={CarCar_DesignDiagram}
+                className=""
+                width={"100"}
+                height={"35"}
+                layout="responsive"
+                alt="Excalidraw diagram of CarCar's microservice architechture.
+                To the left is the Service microservice with technicians, appointments,
+                and service appointment lists, in the middle is the Inventory
+                microservice which holds the manufacturer, models, automobiles,
+                and automobile lists, and to the right is the Sales microservice
+                that holds the customers, salesperson, sales, and list of sales"
+              />
+            </div>
           </div>
-            {/* pictures section for CarCar */}
-{/* <div className="flex flex-col gap-10 lg:flex-row lg_flex-wrap">
-  <div className="basis-1/3 flex-1">
-    <Image src={project_alpha_1} alt="..." width={"100%"} height={"100%"} layout="responsive"/>
-  </div>
-</div> */}
-
 
           {/* Project Alpha */}
           <h3 className="text-2xl pt-6 text-purple-800 dark:text-purple-300">
@@ -420,7 +441,9 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                alt=""
+                alt="Screenshot of Project and Task Manager Web Application's
+                'My Projects' list view which includes a column of project names,
+                and a column of Number of tasks assigned within those projects"
               />
             </div>
 
@@ -431,7 +454,10 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                alt=""
+                alt="A screenshot of the 'My Tasks' page for the
+                Project and Task Manager Web Application. This showcases a table
+                with rows of Name, Start Date, Due Date, and Is Completed for numerous
+                tasks contained within this specific project."
               />
             </div>
           </div>

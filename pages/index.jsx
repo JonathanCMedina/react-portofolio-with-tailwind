@@ -9,6 +9,11 @@ import cubes from '../public/cubes.png';
 import project_alpha_1 from '../public/project_alpha_1.png';
 import project_alpha_2 from '../public/project_alpha_2.png';
 import { useState, useEffect } from "react";
+import Create_Sale2 from '../public/CarCar/CarCar_Create_Sale2.png'
+import List_Sales from '../public/CarCar/CarCar_List_Sales.png'
+import NavBar from '../public/CarCar/CarCar_nav.png'
+import ServiceAppts from '../public/CarCar/CarCar_Service_Appts.png'
+
 
 
 export default function Home() {
@@ -324,7 +329,51 @@ export default function Home() {
             Please take a look at the Readme file as we crafted it very
             meticulously! 😁
           </p>
-          <div>
+
+          <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={Create_Sale2}
+                className=""
+                width={"100"}
+                height={"50"}
+                layout="responsive"
+                alt=""
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={NavBar}
+                className=""
+                width={"100"}
+                height={"75"}
+                layout="responsive"
+                alt=""
+              />
+            </div>
+
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={List_Sales}
+                className=""
+                width={"125"}
+                height={"50"}
+                layout="responsive"
+                alt=""
+              />
+            </div>
+
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={ServiceAppts}
+                className=""
+                width={"100"}
+                height={"40"}
+                layout="responsive"
+                alt=""
+              />
+            </div>
+
 
           </div>
             {/* pictures section for CarCar */}
@@ -347,7 +396,7 @@ export default function Home() {
           </h3>
           <p className="pt-2 pb-4 dark:text-gray-300">
             {" "}
-            The Project and Task Manager Web Application was my first ever
+            The Project and Task Manager Web Application (Also referred as Project Alpha) was my first ever
             full-stack coding project created during my time with Hack Reactor.
             The Project and Task Manager allows users to signup and log in,
             create projects, create tasks within those projects, and keep track
@@ -367,7 +416,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={project_alpha_1}
-                className="rounded-lg object-cover"
+                className=""
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -378,7 +427,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={project_alpha_2}
-                className="rounded-lg object-cover"
+                className=""
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -386,6 +435,8 @@ export default function Home() {
               />
             </div>
           </div>
+
+
         </section>
         {/* Contact Form Section  */}
         <section>

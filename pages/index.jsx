@@ -11,7 +11,7 @@ import project_alpha_2 from '../public/project_alpha_2.png';
 import { useState, useEffect } from "react";
 import Create_Sale2 from '../public/CarCar/CarCar_Create_Sale2.png'
 import List_Sales from '../public/CarCar/CarCar_List_Sales.png'
-import NavBar from '../public/CarCar/CarCar_nav.png'
+import NavBar from '../public/CarCar/CarCar_Nav.png'
 import ServiceAppts from '../public/CarCar/CarCar_Service_Appts.png'
 import CarCar_DesignDiagram from '../public/CarCar/CarCar_DesignDiagram.png'
 import MME1 from '../public/MealMingle/MMExcalidraw1.png'

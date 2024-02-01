@@ -14,7 +14,10 @@ import List_Sales from '../public/CarCar/CarCar_List_Sales.png'
 import NavBar from '../public/CarCar/CarCar_nav.png'
 import ServiceAppts from '../public/CarCar/CarCar_Service_Appts.png'
 import CarCar_DesignDiagram from '../public/CarCar/CarCar_DesignDiagram.png'
-
+import MME1 from '../public/MealMingle/MMExcalidraw1.png'
+import MME2 from '../public/MealMingle/MMExcalidraw2.png'
+import MME3 from '../public/MealMingle/MMExcalidraw3.png'
+import MME4 from '../public/MealMingle/MMExcalidraw4.png'
 
 
 export default function Home() {
@@ -40,14 +43,14 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} />
               </li>
               <li>
-                <a
+                {/* <a
                   className="bg-teal-600
                     text-white px-4 py-2 rounded-md ml-8 shadow-md dark:shadow-white"
                   href="Jonathan_Medina_SoftwareEngineerResume.pdf"
                   download="Jonathan_Medina_SoftwareEngineer_Resume"
                 >
                   Resume{" "}
-                </a>
+                </a> */}
               </li>
             </ul>
           </nav>
@@ -280,7 +283,7 @@ export default function Home() {
               🥂
             </a>
           </h3>
-          <p className="pt-2 pb-4 dark:text-gray-300">
+          <p className="pt-2 pb-2 dark:text-gray-300">
             MealMingle is the final group project with Hack Reactor. MealMingle
             was created to be a premiere solution to scheduling and organizing
             dinner parties, as well as other events. Thinking of throwing a
@@ -295,6 +298,60 @@ export default function Home() {
             frontend authentication were imported from the Galvanize Auth
             Library, and the frontend website is deployed through Gitlab.
           </p>
+          <h4 className="pb-4 flex justify-center dark:text-gray-300">
+            Please peruse the wireframe designs for MealMingle below!
+          </h4>
+
+          {/* pictures section for MealMingle */}
+          <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/2 flex-1">
+              <Image
+                src={MME1}
+                className=""
+                width={"100%"}
+                height={"30%"}
+                layout="responsive"
+                alt="This screenshot showcases MealMingle's
+                About Us, Home Page, and Sign Up wireframe page designs"
+              />
+            </div>
+
+            <div className="basis-1/2 flex-1">
+              <Image
+                src={MME2}
+                className=""
+                width={"100"}
+                height={"25"}
+                layout="responsive"
+                alt="This screenshot showcases MealMingle's
+                Login, Main Page, and Create an event wireframe page designs"
+              />
+            </div>
+
+            <div className="basis-1/2 flex-1">
+              <Image
+                src={MME3}
+                className=""
+                width={"100"}
+                height={"25"}
+                layout="responsive"
+                alt="SThis screenshot showcases MealMingle's
+                Calendar Week view, Edit an Event, and My Events wireframe page designs"
+              />
+            </div>
+
+            <div className="basis-1/2 flex-1">
+              <Image
+                src={MME4}
+                className=""
+                width={"100"}
+                height={"25"}
+                layout="responsive"
+                alt="This screenshot showcases MealMingle's
+                List All Events, Event Detail, and Invite to Event wireframe page designs"
+              />
+            </div>
+          </div>
 
           {/* Project Beta */}
           <h3 className="text-2xl pt-6 text-green-700 dark:text-green-400">
@@ -307,7 +364,7 @@ export default function Home() {
             </a>
             <a href="https://www.youtube.com/shorts/LWVTsHNQIiU"> 🚗 </a>{" "}
           </h3>
-          <p className="pt-2 pb-4 dark:text-gray-300">
+          <p className="pt-2 pb-2 dark:text-gray-300">
             CarCar is the second full-stack coding project through Hack Reactor.
             CarCar emulates a car dealership website with three distinct parts:
             Inventory, Sales, and Services. This project was created as a pair
@@ -330,9 +387,11 @@ export default function Home() {
             Please take a look at the Readme file as we crafted it very
             meticulously! 😁
           </p>
-
+          <h4 className="pb-4 flex justify-center dark:text-gray-300">
+            Please take a look at some of the pages and the design diagram below!
+          </h4>
+          {/* pictures section for the CarCar */}
           <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
-
             <div className="basis-1/3 flex-1">
               <Image
                 src={Create_Sale2}
@@ -430,6 +489,9 @@ export default function Home() {
             in one day, with stretch goals for further stylings spanned four
             days.{" "}
           </p>
+          <h4 className="pb-4 flex justify-center dark:text-gray-300">
+            Please take a look at some of the pages from my very first project below!
+          </h4>
 
           {/* pictures section for the Project Alpha */}
 

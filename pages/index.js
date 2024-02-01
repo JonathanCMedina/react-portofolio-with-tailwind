@@ -267,7 +267,7 @@ export default function Home() {
             development. This app aims to work by keeping track of
             protein/carbohydrate/fat intake, weigh-ins, creatine. A bit of a
             stretch goal is to use the camera to scan barcodes to get macro
-            information.
+            information. Stay tuned for the wireframe and application designs!
           </p>
 
           {/* MealMingle or better */}
@@ -309,7 +309,7 @@ export default function Home() {
                 src={MME1}
                 className=""
                 width={"100%"}
-                height={"30%"}
+                height={"25"}
                 layout="responsive"
                 alt="This screenshot showcases MealMingle's
                 About Us, Home Page, and Sign Up wireframe page designs"
@@ -333,7 +333,7 @@ export default function Home() {
                 src={MME3}
                 className=""
                 width={"100"}
-                height={"25"}
+                height={"20"}
                 layout="responsive"
                 alt="SThis screenshot showcases MealMingle's
                 Calendar Week view, Edit an Event, and My Events wireframe page designs"
@@ -345,7 +345,7 @@ export default function Home() {
                 src={MME4}
                 className=""
                 width={"100"}
-                height={"25"}
+                height={"23"}
                 layout="responsive"
                 alt="This screenshot showcases MealMingle's
                 List All Events, Event Detail, and Invite to Event wireframe page designs"
@@ -397,7 +397,7 @@ export default function Home() {
                 src={Create_Sale2}
                 className=""
                 width={"100"}
-                height={"50"}
+                height={"53"}
                 layout="responsive"
                 alt="Screenshot of CarCar's Create a Sale form which includes
                 dropdowns for the automobile, the salesperson's information,
@@ -438,7 +438,7 @@ export default function Home() {
                 src={ServiceAppts}
                 className=""
                 width={"100"}
-                height={"40"}
+                height={"37"}
                 layout="responsive"
                 alt="Screenshot of CarCar's service appointments list
                 with one entry including VIN, VIP status, customer name,
@@ -501,7 +501,7 @@ export default function Home() {
                 src={project_alpha_1}
                 className=""
                 width={"100%"}
-                height={"100%"}
+                height={"95"}
                 layout="responsive"
                 alt="Screenshot of Project and Task Manager Web Application's
                 'My Projects' list view which includes a column of project names,
@@ -514,7 +514,7 @@ export default function Home() {
                 src={project_alpha_2}
                 className=""
                 width={"100%"}
-                height={"100%"}
+                height={"95"}
                 layout="responsive"
                 alt="A screenshot of the 'My Tasks' page for the
                 Project and Task Manager Web Application. This showcases a table

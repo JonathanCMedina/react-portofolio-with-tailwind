@@ -454,7 +454,7 @@ export default function Home() {
                 width={"100"}
                 height={"35"}
                 layout="responsive"
-                alt="Excalidraw diagram of CarCar's microservice architechture.
+                alt="Excalidraw diagram of CarCar's microservice architecture.
                 To the left is the Service microservice with technicians, appointments,
                 and service appointment lists, in the middle is the Inventory
                 microservice which holds the manufacturer, models, automobiles,
@@ -478,7 +478,7 @@ export default function Home() {
             {" "}
             The Project and Task Manager Web Application (Also referred as Project Alpha) was my first ever
             full-stack coding project created during my time with Hack Reactor.
-            The Project and Task Manager allows users to signup and log in,
+            The Project and Task Manager allows users to sign up and log in,
             create projects, create tasks within those projects, and keep track
             progress to stay focused and on task. This application was created
             using Python and Django for backend endpoints and authentication.
